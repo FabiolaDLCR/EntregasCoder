@@ -1,0 +1,260 @@
+/*Index*/
+body{
+    background-image: url(imagenes/background.jpg);
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}  
+header {
+    display:flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 40px;
+    align-items: center;
+}
+.logo img{
+    flex: auto;
+    width: 180px;
+    height: 70px;   
+}
+.labe_hamburguesa{
+    display: none;
+}
+.menu-ham{
+    display: none;
+}
+.responsive-carousel{
+    display: none;
+}
+
+@media(max-width: 768px){
+    main{
+        display: none;
+    }  
+    header {
+        display:flex;
+        justify-content: space-between;
+    }
+    .logo img{
+        flex: auto;
+        size: 10px;   
+    }
+    .labe_hamburguesa{
+        display: contents;
+    }
+    .menu-ham:checked + .menu1{
+        display: block;
+    }
+    .menu1 ul{
+        background-color: antiquewhite;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 35px;
+        position: fixed;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        z-index: 2;
+    }
+    .menu1{
+        display: none;
+    }
+    .hamburguesa{
+        display: block;
+        background: none;
+    }
+
+    .hamburguesa img:hover .menu1 {
+        display: contents;
+    }
+    .responsive-carousel{
+        display: contents;
+        margin: 15px;
+        z-index: 1;
+    }
+    
+    
+}
+
+#menu-principal{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu1 a:hover{
+    background-color: #5B6E52;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+.menu1 a{
+    text-decoration: none;
+    padding: 10px;
+    color: darkolivegreen;
+    font-weight: bold;
+}
+main{
+    margin: 10px 55px 10px 55px;
+    padding-top: 35px;
+}
+main img {
+    height: 580px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%
+
+}
+.footer-box{
+    display: flexbox;
+    margin: 20px;
+    text-align: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+footer h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+
+}
+footer img{
+    width: 25px;
+    height: 25px;
+}
+footer .contenedor .footer-box p{
+    justify-content: center;
+    
+}
+    
+
+/*Nosotros*/
+
+.nosotros h1{
+    font-size: 35;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #5B6E52;
+
+    
+}
+.grid-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px 320px;
+}
+.grid-item-1{
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-1 img{
+    height: 320px;
+    width: 320px;
+}
+.grid-item-2{
+    grid-column: 2/3;
+    align-items: center;
+}
+.grid-item-2 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20;
+    padding-top: 95px;
+    justify-content: left;
+}
+.grid-item-3{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+.grid-item-3 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20;
+}
+.grid-item-4{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-top: 0%;
+}
+.grid-item-4 img{
+    width: 320px;
+    height: 320px;
+}
+/*Contacto*/
+.ubicacion{
+    display: flex;
+}
+.contacto .ubicacion h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-top: 95px;
+    text-align: left;
+}
+iframe{
+    margin: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+}
+.contacto h2{   
+    color: olive;
+    padding-left: 50%;
+}
+
+/*Accesorios*/
+.accesorios{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+.accesorios img{
+      width: 250px;
+      height: 250px;
+      display: flexbox;
+      border-radius: 10px;
+}
+.box {
+    width: 300px;
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;   
+}
+.accesorios :hover img {
+    -webkit-transform:scale(0.8);transform:scale(0.8);}
+
+/*Despensa*/
+.despensa{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+.despensa img{
+      width: 250px;
+      height: 250px;
+      display: flexbox;
+      border-radius: 10px;
+}
+.despensa :hover img {
+    -webkit-transform:scale(0.8);transform:scale(0.8);}
+
+.alimentos {
+    width: 300px;
+    text-align: center;
+    font-size: 12px;
+    margin: 15px; 
+    border-radius: 10px;
+}
