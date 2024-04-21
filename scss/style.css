@@ -43,4 +43,35 @@ header .menu1 a:hover {
   background-color: rgb(40, 97, 40);
   color: antiquewhite;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .logo img {
+    flex: auto;
+    size: 10px;
+  }
+  header .labe_hamburguesa {
+    display: contents;
+  }
+  header .menu-ham:checked + .menu1 {
+    display: block;
+  }
+  header .menu1 {
+    display: none;
+  }
+  header .menu1 ul {
+    background-color: antiquewhite;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    z-index: 2;
+  }
 }/*# sourceMappingURL=style.css.map */
