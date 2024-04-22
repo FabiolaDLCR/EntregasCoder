@@ -22,8 +22,8 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: rgb(40, 97, 40);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #59580c;
+  font-family: "lucida sans regular";
 }
 header .logo img {
   flex: auto;
@@ -40,9 +40,9 @@ header .responsive-carousel {
   display: none;
 }
 header .menu1 a:hover {
-  background-color: rgb(40, 97, 40);
-  color: antiquewhite;
-  border-radius: 10px;
+  background-color: #59580c;
+  color: #e9e5cd;
+  border-radius: 25px;
 }
 
 @media (max-width: 768px) {
@@ -64,7 +64,7 @@ header .menu1 a:hover {
     display: none;
   }
   header .menu1 ul {
-    background-color: antiquewhite;
+    background-color: #e9e5cd;
     flex-direction: column;
     align-items: center;
     padding-top: 35px;
@@ -103,8 +103,10 @@ footer {
   margin-top: 35px;
 }
 footer h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #59580c;
+  font-family: "lucida sans regular";
   font-size: small;
+  font-weight: bold;
 }
 footer img {
   width: 25px;
@@ -112,6 +114,8 @@ footer img {
 }
 footer p {
   justify-content: center;
+  font-family: "lucida sans";
+  font-size: smaller;
 }
 footer .contenedor {
   display: flex;

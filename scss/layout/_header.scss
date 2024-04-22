@@ -1,3 +1,10 @@
+$color-1: #59580c;
+$color-2: #97a258;
+$color-3:#e9e5cd;
+$fuente-titulos:'lucida sans regular';
+$fuente-texto:'lucida sans';
+
+
 header {
     display:flex;
     justify-content: space-between;
@@ -13,8 +20,8 @@ header {
         margin: 10px;
         a{
             text-decoration: none;
-            color: rgb(40, 97, 40);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: $color-1;
+            font-family: $fuente-titulos
         }
         }
         }
@@ -37,9 +44,9 @@ header {
     }
 .menu1{
     a:hover{
-        background-color: rgb(40, 97, 40);
-        color: antiquewhite;
-        border-radius: 10px;
+        background-color: $color-1;
+        color: $color-3;
+        border-radius: 25px;
     }
 }
 }
@@ -62,7 +69,7 @@ header {
     .menu1{
         display: none;
         ul{
-            background-color: antiquewhite;
+            background-color: $color-3;
             flex-direction: column;
             align-items: center;
             padding-top: 35px;

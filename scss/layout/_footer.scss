@@ -1,10 +1,18 @@
+$color-1: #59580c;
+$color-2: #97a258;
+$color-3:#e9e5cd;
+$fuente-titulos:'lucida sans regular';
+$fuente-texto:'lucida sans';
+
 footer{
     width: 100%;
     justify-content: center;
     margin-top: 35px;
     h2{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: $color-1;
+        font-family: $fuente-titulos;
         font-size: small;
+        font-weight: bold;
     }
     img{
         width: 25px;
@@ -12,6 +20,8 @@ footer{
     }
     p{
         justify-content: center;
+        font-family: $fuente-texto;
+        font-size: smaller;
     }
     .contenedor{
         display: flex;
