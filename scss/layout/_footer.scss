@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+    h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: small;
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    p{
+        justify-content: center;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%
+    }
+    .footer-box{
+        display: flexbox;
+        margin: 20px;
+        text-align: center;
+        align-items: baseline;
+        flex-wrap: wrap;  
+    }
+}
