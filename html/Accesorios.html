@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <title>Nosotros</title>
+    <title>Salvia | Accesorios </title>
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
-         <img src="imagenes/logo.png" alt="LogoSalvia">
+        <a href="../html/index.html" class="logo">
+         <img src="../imagenes/logo.png" alt="LogoSalvia">
         </a>
         <label class="labe_hamburguesa" for="menu-ham">
          <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="menu--v1"/>
@@ -28,38 +27,60 @@
                            Tienda
                          </button>
                          <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="despensa.html">Despensa</a></li>
+                           <li><a class="dropdown-item" href="../html/despensa.html">Despensa</a></li>
                            <li><a class="dropdown-item" href="#">Cuidado Personal</a></li>
-                           <li><a class="dropdown-item" href="Accesorios.html">Accesorios</a></li>
+                           <li><a class="dropdown-item" href="#">Accesorios</a></li>
                          </ul>
                        </div>
                  </li>
                  <li class="active">
-                     <a href="index.html">Inicio</a> 
+                     <a href="../html/index.html">Inicio</a> 
                  </li>
                  <li>
-                     <a href="#">Nosotros</a>
+                     <a href="../html/nosotros.html">Nosotros</a>
                  </li>
                  <li>
-                     <a href="contacto.html">Contacto</a>
+                     <a href="../html/contacto.html">Contacto</a>
                  </li>
                  </ul>
          </nav>
          
      </header>
-     <main class="nosotros">
-     <h1>Sobre Nosotros</h1>
-     <section class="grid-nosotros">
-        <div class="grid-item-1"><img src="imagenes/quienes somos.jpg" alt="sobre nosotros"></div>
-        <div class="grid-item-2"> <p>La salvia es una planta a la que se le han atribuido propiedades protectoras y sanadoras. De igual manera, en Salvia buscamos proteger y sanar a nuestro planeta brindándote productos a granel, libres de plástico y sin químicos que dañen al medio ambiente.
-        Otro de nuestros propósitos es promover el consumo local y artesanal a través de alianzas con marcas 100% mexicanas.</p></div>
-        <div class="grid-item-3">
-            <p>Nuestra misión es brindarte alternativas sustentables de tus productos de uso y consumo cotidiano, para que empieces una vida libre de plástico.</p>
+
+     <div class="accesorios">
+        <div class="box">
+            <img src="../imagenes/frasco-vidrio.jpg" alt="frasco-de-vidrio">
+            <div class="text">
+                <h4>Frasco de vidrio</h4>
+                <select name="capacity" id="capacity">
+                <option value="500ml">500ml</option> 
+                <option value="1000ml">1000ml</option>  
+                </select> 
+                <input type="add-to-cart" value="add to cart">
+            </div>
         </div>
-        <div class="grid-item-4"><img src="imagenes/nosotros2.jpg" alt="sobre nosotros"></div>
-     </section>
-     </main>
+
+        <div class="box">
+            <img src="../imagenes/infusor.jpg" alt="infusor">
+            <div class="text">
+                <h4>Infusor de acero inoxidable</h4>
+                <input type="add-to-cart" value="add to cart">  
+                </select> 
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../imagenes/straw.jpg" alt="popote-acero-inox">
+            <div class="text">
+                <h4>Popote de acero inoxidable</h4>
+                <input type="add-to-cart" value="add to cart">
+                </select> 
+            </div>
+        </div>
+     </div>
+
      <footer>
+
         <div class="newsletter">
         <h4>Suscríbete a nuestro newsletter</h4>
         <input type="email" name="" id="" placeholder="Correo electrónico">
@@ -86,8 +107,7 @@
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO2ZO09UQRTHfwUqRB67lksrgrEQBTsfsZOYqHwCQlS+gApS+2iNhFKDX0AxsZLFZ6f2Itio2AoKCBWuOcn/JhMDu3Mfu3NN9p9McrP3nHPn7Jz3QBNN5AK9wAQwDywAG0Alo2WyTGYZGAcO1UOBQeBFhpv2XfPAQBYK7AGmgT8S/AN4AFzQ6ewnO5gsk3kReKhvVfTtKaAlqeAi8FLCfgO3gE4ah07gNrDpnE4hyUlEpvRdphUKR4Ev2ssbYG8c5mkxfgNKhEcJWNae7vsyDcouzZyOkR8cl5lt67kmIpMyn8gb7mhvFqKroteJTo107Ajn5ZNmRkM7vO8CVrTHnmqCJkRk4S8Elp0cYv65E2b0/kY1QWURWSzPqyLDej9XTdCiiNKUB5Z/RoGnwCeVHht6ntU7o9kJQ1LGlDhXw/xN3q5YE1FHAgXagEngp0fpsQrcBFoTfKdDMmyvuyL6UJI4/8Hhfw5cccoYW336bc6he58wT1Vq7TOJIiWZQnTcJz14TjlmnCTpVrJWpM05iVcxayHzk9fifRfTzCpZKzIp+oUkBZ2UiU7GQn8QRYqOY/uY02444wSAYghFRh3HTosof42EUGRWtJdJj6uS9TiEIpFtW4hNiz6fJFcvRdZF2056tEvW+v+uSKdk/fKkb5pWNWe3siMtxkI6+6hPOe2J+ZDht6gkZvSnSY6zTkIshC5RFmNkZRfGs+TT8dVbkVaV4hUVgHGUOQC8zUvR+G8Zv6TaycecPuepjI9Q0r8a8ZcViQ4rz7Trecxx7Ogk6tJYraVodVtViq96trp2dbCvXq3uYgbDh4LC6BP1KetaC/ptJGHvEmv4EHoc5INhn/ZhPPCAzgePtMdreR6Z1oL3yBQnqtglS95wN05XOqBrhU3f8X2DMAhs6Vqh35dpSprb+LKb8Oh25sL34jC2OCZmY/4ThEM/8NVJtLEvRQuOMpu6ZDFnaxS65BNbTruQOP+06M5uW8JWdD9xSQODLNrcCCarT3lixolO2zKnxNfTLo4AzzxKj6xXuV4Bp0d9w5xTfmS1aZP1UaH1OnCwHgo00QTx8Bf0wax6bwlEYQAAAABJRU5ErkJggg==">
         </div>
        </div>
-    </footer> 
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
