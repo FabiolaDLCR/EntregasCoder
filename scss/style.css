@@ -215,7 +215,6 @@ footer .footer-box {
   50% {
     color: #97a258;
     background-color: #e9e5cd;
-    padding: 10px;
   }
   100% {
     color: #e9e5cd;
@@ -233,7 +232,7 @@ footer .footer-box {
   animation-name: descuento;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 8s;
+  animation-duration: 5s;
 }
 
 .despensa {
