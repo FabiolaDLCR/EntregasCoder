@@ -207,6 +207,35 @@ footer .footer-box {
   transform: scale(0.8);
 }
 
+@keyframes descuento {
+  0% {
+    color: #59580c;
+    background-color: #e9e5cd;
+  }
+  50% {
+    color: #97a258;
+    background-color: #e9e5cd;
+    padding: 10px;
+  }
+  100% {
+    color: #e9e5cd;
+    background-color: #59580c;
+  }
+}
+.primera-compra {
+  margin: 35px;
+  border-radius: 20px;
+}
+.primera-compra p {
+  text-align: center;
+  font-family: "lucida sans";
+  color: #59580c;
+  animation-name: descuento;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+}
+
 .despensa {
   width: 100%;
   display: flex;
